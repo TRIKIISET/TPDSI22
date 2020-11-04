@@ -1,0 +1,22 @@
+<h1>
+    Nourhene YAAKOUBI
+</h1>
+<ul>
+    <li>{{aliment.nom}}</li>
+    <li>
+        <img [src]="aliment.image" alt="jhk">
+    </li>
+    <li>Prix = {{aliment.prix}}</li>
+    <li> <input type="checkbox" [(ngModel)]="aliment.frais">Frais</li>
+</ul>
+<button (click)="onAfficher()" class="btn btn-primary">
+    <i class="fa fa-address-book" aria-hidden="true"></i>
+    <i class="fa fa-ambulance" aria-hidden="true"></i>
+    Afficher
+    <i class="fa fa-bed" aria-hidden="true"></i>
+</button>
+<input type="text" (keypress)= "onAppuyer($event)">
+<br>
+Photo:<input type="text" [(ngModel)]="aliment.image">
+<br>
+Prix:<input type="text" [(ngModel)]="aliment.prix">
